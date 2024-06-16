@@ -1,0 +1,164 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #EFF3EC;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: left;
+    padding: 20px 0;
+}
+
+.logo {
+    width: 150px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.left-section {
+    width: 60%;
+}
+
+.left-section h1 {
+    font-size: 24px;
+    color: #094F0C;
+}
+
+.left-section img {
+    width: 90%;
+    height: 500px;
+    border-radius: 20px;
+    margin: 20px 0;
+}
+
+.enquire-button {
+    background-color: #064D00;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 200px;
+}
+
+.right-section {
+    width: 35%;
+    background-color: #F3F3D8;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.right-section h2 {
+    font-size: 20px;
+    color: #094F0C;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input, form select {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;    
+}
+.select-location{
+    
+    width: 200px;
+}
+.otp-section {
+    display: flex;
+    gap: 10px;
+}
+
+.send-otp-button {
+    background-color: #ffffff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 40px;
+}
+
+.consent {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+
+.consent input {
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.submit-button {
+    background-color: #E4E4E4;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: not-allowed;
+}
+
+.verification-note {
+    font-size: 14px;
+    color: #555;
+    margin-top: 10px;
+    text-align: center;
+}
+.row{
+    display: flex;
+}
+.sendotp-btn{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.sendotp-btn span{
+    font-size: 15px;
+}
+#sendotp-failure{
+    display: none;
+    color: red;
+    margin-top: -7px;
+}
+#sendotp-time{
+    display: none;
+    margin-top: -7px;
+}
+.tick-mark {
+    position: absolute;
+    right: 6px;
+    top: 9px;
+    color: green;
+    display: none;
+}
+input[type="password"] {
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+}

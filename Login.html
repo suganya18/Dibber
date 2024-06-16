@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dibber Franchise Opportunity</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="Script.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <img src="Images/Dibber_Logo_green.webp" alt="Dibber Logo" class="logo">
+        </header>
+        <div class="content">
+            <div class="left-section">
+                <h1>Partner with Northern Europe's #1 Chain of Preschools!</h1>
+                <img src="Images/MainLogo.jpg" alt="Children playing">
+                <button class="enquire-button">Enquire now</button>
+            </div>
+            <div class="right-section">
+                <h2>Franchise opportunity</h2>
+                <form onsubmit="handleSubmit(event)">
+                    <label for="full-name">Full name *</label>
+                    <input type="text" id="full-name" name="full-name" placeholder="Full name" required>
+
+                    <label for="email-id">Email ID *</label>
+                    <input type="email" id="email-id" name="email-id" placeholder="Email ID" required>
+                    <div class="row">
+                        <div>
+                            <label for="select-city">Select City *</label>
+                            <select id="select-city" name="select-city" required class="select-location">
+                                <option value="">No selection</option>
+                                <option value="1">Chennai</option>
+                                <option value="2">Kozhikode</option>
+                                <option value="3">Vijayawada</option>
+                                <option value="4">Mumbai</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="select-state">Select State *</label>
+                            <select id="select-state" name="select-state" required class="select-location">
+                                <option value="">No selection</option>
+                                <option value="1">Tamil Nadu</option>
+                                <option value="2">Kerala</option>
+                                <option value="3">Andhra Pradesh</option>
+                                <option value="4">Maharashtra</option>
+                            </select>
+
+                        </div>
+                    </div>
+
+
+                    <label for="mobile-number">Mobile number *</label>
+                    <input type="tel" id="mobile-number" name="mobile-number" placeholder="Enter 10 digit mobile number" pattern="[0-9]{10}" required>
+
+                    <label for="otp">OTP *</label>
+                    <div class="otp-section">
+                        <div class="sendotp-btn">
+                            <input type="password" id="otp" name="otp" required style="height: 18px;" onchange="ValidateOTP()" maxlength="6">
+                            <span id="tickMark" class="tick-mark">✔️</span>
+                            <span id="sendotp-failure">Invalid OTP</span>
+                        </div>
+                        <div class="sendotp-btn">
+                            <input type="button" id="SendOTP_Btn" onclick="SendOTP()" class="send-otp-button" value="Send OTP">
+                            </button>
+                            <span id="sendotp-time" style="display: none;">resend in 03:00</span>
+                        </div>
+                    </div>
+
+                    <div class="consent">
+                        <input type="checkbox" id="consent" name="consent" required>
+                        <label for="consent">By clicking on Submit, I give consent for receiving marketing communication from Dibber International Preschool</label>
+                    </div>
+
+                    <button type="submit" class="submit-button" id="submit" >Submit</button>
+                </form>
+                <p class="verification-note">Please verify Phone number with OTP authorization</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
